@@ -1,9 +1,10 @@
 {
   "name": "concorrentes-merge",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "scraper.js",
   "scripts": {
-     "start": "node index.js"
+    "start": "node --max-old-space-size=2048 scraper.js",
+    "start:low-mem": "node --max-old-space-size=512 scraper.js"
   },
   "keywords": [],
   "author": "",
@@ -11,6 +12,6 @@
   "description": "",
   "dependencies": {
     "express": "^5.1.0",
-    "puppeteer": "^24.9.0"
+    "puppeteer": "^21.5.2"
   }
 }
