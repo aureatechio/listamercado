@@ -1,5 +1,3 @@
-const { launchBrowser } = require('../utils/browser');
-
 async function scrapeCarrefour(term) {
   const browser = await launchBrowser();
   const page = await browser.newPage();
